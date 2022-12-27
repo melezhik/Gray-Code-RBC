@@ -20,6 +20,15 @@ tasks:
     depends:
       -
         name: multi-versions
+    followup:
+      -
+        name: good-doc
+  -
+    name: good-doc
+    plugin: good-doc
+    config:
+      path: source/README.md
+      rakudo_version: 2022.12        
   -
     name: multi-versions
     language: Raku
